@@ -4,6 +4,16 @@
 ---
 
 
+## Chapter 4
+
+In this chapter we worked with state and props, as well as handling user input through a text submit box. We talked about state changes with parent's and children, and how to respect that hierarchy structure. We also talked about how only parents and children can communicate, nothing outside, like a sibling inheritence relationship. In the end of the chapter, we worked with stateless components and converting them to pure functions. Overall, a ton of meat in this chapter with lots of unfamiliar JS/React specific details, syntax, and state being a new topic for me.
+
+![master](/readme_images/ch4-1.png)
+
+
+---
+
+
 ## Chapter 3
 
 In this chapter we began the issue tracker project as mentioned to be the main project in the book. We used tables and classes, as well as built the project using a .jsx file and node to build our .js file. We also learned how to set up classes in React, and how to pass information between classes within our .jsx file. Still getting used to the syntax of everything React, it seems that passing information as parameters to other files and functions is different than I 've seen in the past, as well, getting used to the act of mixing in the html and css elements into the JS stuff and how that all works.
