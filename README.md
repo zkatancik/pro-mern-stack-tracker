@@ -1,6 +1,19 @@
 # ZacharyKatancik-Book
 # Pro MERN Stack 2nd Edition book project
 
+## Chapter 5
+
+In this chapter we discussed and worked with Express, REST API, GraphQL, displaying errors, and valudation checks at a server query level. A large chuck of the chapter is using GraphQL to test our back-end in querying, mutating, and error-handling at a server level. In the screenshots below, I used a couple of hand-writen sever queries to pull information from our task manager and for checking an invalid input error. 
+
+Though discussed briefly, and if I'm understanding correctly, we chose to use GraphQL as our API standard instead of REST. To explore this, we can explore our functionality thorugh the Playground tool that is paired with GraphQL. As well as noted in the books summary and towards to beginning of the book, we're using a CRUD (Create, Read, Update, Delete) approach. pattern in this implication. And the goal of these tools is to create and read tasks on the server side for eventual database-side storage and updating, and eventually ability to delete. 
+
+We also used Express, which is a router for different requests that a user inputs and the server outputs. Using Express, our application takes requests and matches them to a route. For example, a GET request will be mapped to our in-built get() method. Built into express are several properties of request and response objects that we can use with Middleware functions. 
+
+
+![master](/readme_images/ch5-1.png)
+![master](/readme_images/ch5-2.png)
+
+
 ---
 
 
