@@ -2,6 +2,21 @@
 # Pro MERN Stack 2nd Edition book project
 
 
+
+## Chapter 7
+
+Chapter 7 was about separating our front end and our backend, adding a proxy for safety around cookie useage, and lastly, linting our code to adhere to the Airbnb lint standard. To split our front-end and back end, we divided our code into api (back-end) and ui (front-end). These each now include their own server, the api server runnning coordination from MongoDB and waiting for user requests, and the ui server, which hosts index.html and the display properties of the issuetracker. 
+
+Each of these split components contain their own .eslintrc files. These files, along with the installed eslint software, allowed us to check the code style of our js files. In the book, we use Airbnb's js code-style standards. Much of the code changes I did included fixes to standardize the code to the linter. Much of that time devoted to changing my indentation from increments of 4 spaces to increments of 2. Lastly, after getting a clean lint on each file, we added a proptype check to the issueadd function in our App.jsx file.
+
+
+![master](/readme_images/ch7-1.png)
+![master](/readme_images/ch7-2.png)
+
+
+---
+
+
 ## Chapter 6
 
 In this chapter we learned allllllll about MongoDB, working in the mongo shell, common command line arguments for adding, filtering, preventing duplictes, clearing, etc. documents from the database. We learned how to format new documents in the database and how to categorize/  index them. As well, we installed mongodb in our issue tracker application, and set up an initialize database file for it. Lastly, made changes to the server to allow changes to be appended and read from the database, as opposed to program memory. Our newest server code stores and reads all server-side info from a mongoDB database called issuetracker.
