@@ -1,6 +1,17 @@
 # ZacharyKatancik-Book
 # Pro MERN Stack 2nd Edition book project
 
+## Chapter 8
+
+In this chapter we continued to make tweaks to our existing javascript to make it more modular, both from a loading and compiling standpoint and a visual one for developers. We installed a tool called Webpack that allowed us to connect these modular pieces, as JS was not originally intended to work in a modular fashion. 
+
+As well, we installed Webpack Hot Module Replacement. As I understand it, this kind of works like a regular version control system, where when changes are made to one module, the changes are saved and recompiled, not the entire application. This saves time as a developer and could impact users so the entire app doesn't have to be rebuilt if tweaks are deployed. In the end, we also installed a debugging feature called sourcemaps, which allows us to dug our code without having to look at the raw JS.
+
+
+![master](/readme_images/ch8-1.png)
+
+
+---
 
 
 ## Chapter 7
