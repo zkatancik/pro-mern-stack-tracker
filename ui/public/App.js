@@ -15,3 +15,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var element = /*#__PURE__*/_react.default.createElement(_IssueList.default, null);
 
 _reactDom.default.render(element, document.getElementById('contents'));
+
+if (module.hot) {
+  module.hot.accept();
+}
