@@ -1,6 +1,22 @@
 # ZacharyKatancik-Book
 # Pro MERN Stack 2nd Edition book project
 
+
+## Chapter 9
+
+To begin with Chapter 9, we installed the React Router, which allows us to route requests on the client side as opposed to the server side. As a part of this, we rewrote the parts of our code that handled URL queries, first using hashrouting, and then browser routing.
+
+In terms of functionality, we added a navigation bar, a filter drop down, and a long description select button. These each make use of URL queries in slightly different ways. The picture below shows our new hyperlinks and the active link color we added to indicate the active link, as well as the URL change, and the long description shown for issue ID 1.
+
+The last thing we did was a quick adjustment, converting our code from using a hash router to a browser router.
+
+
+![master](/readme_images/ch9-1.png)
+
+
+---
+
+
 ## Chapter 8
 
 In this chapter we continued to make tweaks to our existing javascript to make it more modular, both from a loading and compiling standpoint and a visual one for developers. We installed a tool called Webpack that allowed us to connect these modular pieces, as JS was not originally intended to work in a modular fashion. 
