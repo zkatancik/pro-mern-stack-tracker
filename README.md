@@ -2,6 +2,19 @@
 # Pro MERN Stack 2nd Edition book project
 
 
+## Chapter 10
+
+Lot's of new features this chapter! Depending on the section, we either worked on the front-end or the back-end, implementing each side of our new features. In chapter 10, we added the capability to filter our issues by effort, to edit our issues, and send them to the database, as well as delete issues, send them to a "trash collection" and then implement that in the ui.
+
+A lot of the under the hood work that occured in this chapter had to do with the user inputting text, allowing for queries to be out of sync, then when a use hits a button, resyncing them if valid or reloading the field if invalid. This required a surprising amount of code to make happen correctly and efficiently. However, once we sort of got the hang of allowing temporary asyncronicities, then a submit button validating, we were able to reuse a lot of the ideas used early on in the effort filter and the edit issue functions on the close and delete functions later. 
+
+![master](/readme_images/ch10-1.png)
+![master](/readme_images/ch10-2.png)
+
+
+---
+
+
 ## Chapter 9
 
 To begin with Chapter 9, we installed the React Router, which allows us to route requests on the client side as opposed to the server side. As a part of this, we rewrote the parts of our code that handled URL queries, first using hashrouting, and then browser routing.
