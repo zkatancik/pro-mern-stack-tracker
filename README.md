@@ -2,6 +2,21 @@
 # Pro MERN Stack 2nd Edition book project
 
 
+## Chapter 11
+
+This chapter we used Bootstrap/ React-Bootstrap to style our Issuetracker, add issues, display messages to the user, and give visual feedback for invalid inputs. 
+
+We began by styling our navbar, the table the issues sit in, and the buttons the user pressed to modify each issue in the line. These changes, and the rest made with Bootstrap, were simply applied by importing what we needed from the Bootstrap libraries, and applying them to the elements we needed to apply them to.
+
+From there, we made some display changes to our filter section, exploring how the display will adjust based on the size of the user's window, using a Fluid display available in Bootstrap. Afterwards, we worked on formatting the display of the edit page, using a horizontal table style display. Within this, we also made some modifications to our date validator visual feedback, using Bootstrap-style visual queues. 
+
+We finished the chapter by adding Toast messages throughout. These are temporary little messages that show when the user either does something and we want to send a confirm, or the user does something illegal and we want to display a warning. Previously we'd used JS alerts, these Toast's replaced them. Lastly, we used a Modal window/ pop-up window to refactor how our tracker adds issues. This required a bit of code moving from IssueAdd to an IssueAddNavItem file. The resulting Modal window takes some preliminary info from the user, and on submit, sends us to an IssueEdit page to complete the rest of the Issue. Pretty cool!
+
+![master](/readme_images/ch11-1.png)
+
+
+---
+
 ## Chapter 10
 
 Lot's of new features this chapter! Depending on the section, we either worked on the front-end or the back-end, implementing each side of our new features. In chapter 10, we added the capability to filter our issues by effort, to edit our issues, and send them to the database, as well as delete issues, send them to a "trash collection" and then implement that in the ui.
