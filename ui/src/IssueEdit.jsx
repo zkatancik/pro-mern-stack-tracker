@@ -5,13 +5,13 @@ import {
   Col, Panel, Form, FormGroup, FormControl, ControlLabel,
   ButtonToolbar, Button, Alert,
 } from 'react-bootstrap';
+
 import graphQLFetch from './graphQLFetch.js';
 import NumInput from './NumInput.jsx';
 import DateInput from './DateInput.jsx';
 import TextInput from './TextInput.jsx';
 import Toast from './Toast.jsx';
 import store from './store.js';
-
 
 export default class IssueEdit extends React.Component {
   static async fetchData(match, search, showError) {
@@ -36,7 +36,7 @@ export default class IssueEdit extends React.Component {
       invalidFields: {},
       showingValidation: false,
       toastVisible: false,
-      toastMessage: ' ',
+      toastMessage: '',
       toastType: 'success',
     };
     this.onChange = this.onChange.bind(this);
@@ -99,7 +99,7 @@ export default class IssueEdit extends React.Component {
     }`;
 
     const { id, created, ...changes } = issue;
-    const data = await graphQLFetch(query, { changes, id }, this.showError);
+    const data = await graphQLFetch(query, { changes, id: parseInt(id, 10) }, this.showError);
     if (data) {
       this.setState({ issue: data.issueUpdate });
       this.showSuccess('Updated issue successfully');
