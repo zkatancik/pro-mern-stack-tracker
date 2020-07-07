@@ -79,6 +79,7 @@ export default class IssueEdit extends React.Component {
     });
   }
 
+
   async handleSubmit(e) {
     e.preventDefault();
     this.showValidation();
@@ -99,7 +100,7 @@ export default class IssueEdit extends React.Component {
     }`;
 
     const { id, created, ...changes } = issue;
-    const data = await graphQLFetch(query, { changes, id: parseInt(id, 10) }, this.showError);
+    const data = await graphQLFetch(query, { changes, id }, this.showError);
     if (data) {
       this.setState({ issue: data.issueUpdate });
       this.showSuccess('Updated issue successfully');
@@ -109,6 +110,7 @@ export default class IssueEdit extends React.Component {
   async loadData() {
     const { match } = this.props;
     const data = await IssueEdit.fetchData(match, null, this.showError);
+
     this.setState({ issue: data ? data.issue : {}, invalidFields: {} });
   }
 
@@ -148,9 +150,9 @@ export default class IssueEdit extends React.Component {
       }
       return null;
     }
-
     const { invalidFields, showingValidation } = this.state;
     let validationMessage;
+
     if (Object.keys(invalidFields).length !== 0 && showingValidation) {
       validationMessage = (
         <Alert bsStyle="danger" onDismiss={this.dismissValidation}>
@@ -158,6 +160,7 @@ export default class IssueEdit extends React.Component {
         </Alert>
       );
     }
+
 
     const { issue: { title, status } } = this.state;
     const { issue: { owner, effort, description } } = this.state;
@@ -215,7 +218,6 @@ export default class IssueEdit extends React.Component {
                   name="effort"
                   value={effort}
                   onChange={this.onChange}
-                  key={id}
                 />
               </Col>
             </FormGroup>

@@ -91,6 +91,7 @@ export default class IssueList extends React.Component {
   async loadData() {
     const { location: { search }, match } = this.props;
     const data = await IssueList.fetchData(match, search, this.showError);
+
     if (data) {
       this.setState({ issues: data.issueList, selectedIssue: data.issue });
     }

@@ -5,7 +5,6 @@ import {
   Grid,
 } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-
 import Contents from './Contents.jsx';
 import IssueAddNavItem from './IssueAddNavItem.jsx';
 

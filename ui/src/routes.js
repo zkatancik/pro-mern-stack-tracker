@@ -1,4 +1,3 @@
-
 import IssueList from './IssueList.jsx';
 import IssueReport from './IssueReport.jsx';
 import IssueEdit from './IssueEdit.jsx';

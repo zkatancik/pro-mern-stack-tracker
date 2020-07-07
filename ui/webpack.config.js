@@ -2,7 +2,6 @@ const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 const webpack = require('webpack');
 
-
 const browserConfig = {
   mode: 'development',
   entry: { app: ['./browser/App.jsx'] },
@@ -78,6 +77,11 @@ const serverConfig = {
       },
     ],
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      __isBrowser__: 'false',
+    }),
+  ],
   devtool: 'source-map',
 };
 
