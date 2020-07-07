@@ -1,4 +1,4 @@
-function template(body) {
+export default function template(body) {
   return `<!DOCTYPE HTML>
 <html>
 
@@ -17,10 +17,9 @@ function template(body) {
 <body>
   <!-- Page generated from template. -->
   <div id="contents">${body}</div>
+
 </body>
 
 </html>
 `;
 }
-
-module.exports = template;
