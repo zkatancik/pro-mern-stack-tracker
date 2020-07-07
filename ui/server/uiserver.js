@@ -53,10 +53,6 @@ app.get('*', (req, res, next) => {
   render(req, res, next);
 });
 
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve('public/index.html'));
-});
-
 const port = process.env.UI_SERVER_PORT || 8000;
 
 app.listen(port, () => {
