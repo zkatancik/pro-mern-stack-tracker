@@ -2,11 +2,11 @@
  * Run using the mongo shell. For remote databases, ensure that the
  * connection string is supplied in the command line. For example:
  * localhost:
- *  mongo issuetracker scripts/init.mongo.js
+ *   mongo issuetracker scripts/init.mongo.js
  * Atlas:
- *  mongo mongodb+srv://user:pwd@xxx.mongodb.net/issuetracker scripts/init.mongo.js
+ *   mongo mongodb+srv://user:pwd@xxx.mongodb.net/issuetracker scripts/init.mongo.js
  * MLab:
- *  mongo mongodb://user:pwd@xxx.mlab.com:33533/issuetracker scripts/init.mongo.js
+ *   mongo mongodb://user:pwd@xxx.mlab.com:33533/issuetracker scripts/init.mongo.js
  */
 
 /* global db print */
@@ -28,8 +28,8 @@ const issuesDB = [
       + '\n1. Refresh the browser.'
       + '\n2. Select "New" in the filter'
       + '\n3. Refresh the browser again. Note the warning in the console:'
-      + '\n Warning: Hash history cannot PUSH the same path; a new entry'
-      + '\n will not be added to the history stack'
+      + '\n   Warning: Hash history cannot PUSH the same path; a new entry'
+      + '\n   will not be added to the history stack'
       + '\n4. Click on Add.'
       + '\n5. There is an error in console, and add doesn\'t work.',
   },
