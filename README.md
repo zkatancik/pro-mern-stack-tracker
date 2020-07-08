@@ -1,6 +1,21 @@
 # ZacharyKatancik-Book
 # Pro MERN Stack 2nd Edition book project
 
+## Chapter 12
+
+The focus of this chapter was on server-side rendering of the content served by our issuetracker. This is because search engine crawling does not work as well with browser rendering, due to it's lack of ability to execute the javascript in our app. So in this chapter, we had the server send an initially rendered page to the browser, and from there, the browser takes over. 
+
+To accomplish this, we split the UI field into 3 directories, the browser, server, and source. To dip our feet into the idea, the book started us with the about page we set up for in our nav bar. We created a template.js page that replaced our index.html, and allowed the server to read what was formerly index.html on the server side. 
+
+Then, we used a software called webpack to render the pages on the server side. This process led to us needing to make changes, like using Hydrate and Serialize. From there, we expanded this idea of Server-side rendering to the issue edit and issue list pages. For whatever reason, I had a hard time fighting this to work, but after combing through my pages, found that I'd just missed adding and deleting a couple of sections of my code as the book outlined. The last thing we did was sync the loading of the issues from the database to the rendering of the template, so there wasn't a slight lag time in loading the issue table. All around a tough chapter, I feel like I've got a lot to learn here!
+
+
+![master](/readme_images/ch12-1.png)
+
+
+---
+
+
 
 ## Chapter 11
 
