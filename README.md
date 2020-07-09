@@ -1,6 +1,25 @@
 # ZacharyKatancik-Book
 # Pro MERN Stack 2nd Edition book project
 
+
+## Chapter 13
+
+This chapter we added more features to our issueTracker. We began with converting toasts to Higher Order Components. Then we added a pivot table of issues on certain categories and filters in our report page. We added lots of dummy issues, and then pagi-fied our issue list into groups of 10. Lastly, we added a search bar.
+
+The HOC's section used the Toast notes to exemplify how using resuseable React pattern's can be useful for certain site-wide features. 
+
+Then we created 100 dummy issues using a mongo script, allowing us to have data to run through our newly created pivot table. I found this to be pretty similiar to when we did the issuetracker table in terms of bootstrap and using React to lay out page elements. Then, once we had over 100 elements, it led to user's needing to scroll a lot. So we implemented a page feature from scratch. This allowed users to view 10 issues at a time, and scroll through pages 5 at a time using our page selector below the table.
+
+Lastly, we used a mongo/react search library to implement a search bar to look for issues on keywords at the top of our issuetracker, within the nav bar.
+
+
+![master](/readme_images/ch12-1.png)
+![master](/readme_images/ch13-2.png)
+
+
+---
+
+
 ## Chapter 12
 
 The focus of this chapter was on server-side rendering of the content served by our issuetracker. This is because search engine crawling does not work as well with browser rendering, due to it's lack of ability to execute the javascript in our app. So in this chapter, we had the server send an initially rendered page to the browser, and from there, the browser takes over. 
