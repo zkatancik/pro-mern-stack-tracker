@@ -13,7 +13,7 @@ Then we created 100 dummy issues using a mongo script, allowing us to have data 
 Lastly, we used a mongo/react search library to implement a search bar to look for issues on keywords at the top of our issuetracker, within the nav bar.
 
 
-![master](/readme_images/ch12-1.png)
+![master](/readme_images/ch13-1.png)
 ![master](/readme_images/ch13-2.png)
 
 
