@@ -2,6 +2,21 @@
 # Pro MERN Stack 2nd Edition book project
 
 
+## Chapter 14
+
+This chapter was all about creating user logins, authentication, persistence of authentication, setting user capabilities based on authentication, creating cookies, and using cookies at a server and ui level.
+
+To begin, we used the Google sign-in api to replace our placeholder user, and issue authetification tokens. From there, we explored the different paths of authentication. First browser/ UI side, and later in the server. Using our newly persistant and authenticated user, we were able to give signed in states of our issue tracker different capabilities than a signed out state. The signed out state we blocked edit submit, delete, and close buttons, as well as the add issue button.
+
+Afterwards we used something called CORS to allow user's tokens to be passed to the API. This allowed us to render authentication only capabilities at a server side. Lastly, we changed our ui and api to have a common url, mapping our application to promernstack.com.
+
+
+![master](/readme_images/ch14-1.png)
+
+
+---
+
+
 ## Chapter 13
 
 This chapter we added more features to our issueTracker. We began with converting toasts to Higher Order Components. Then we added a pivot table of issues on certain categories and filters in our report page. We added lots of dummy issues, and then pagi-fied our issue list into groups of 10. Lastly, we added a search bar.
