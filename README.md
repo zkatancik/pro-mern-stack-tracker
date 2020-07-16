@@ -2,6 +2,25 @@
 # Pro MERN Stack 2nd Edition book project
 
 
+## Chapter 15
+
+The final chapter of our IssueTracker was about deploying the database, ui, and api to Heroku for public access. 
+
+A lot of this chapter required me to go out and figure some things on my own! First, we created two new repos on github. One for the API and one for the UI. These were also copied from the original issuetracker locally in a gitignored directory called deploy.
+
+From there, I created an api application on Heroku, then hit pause a minute to get my local MongoDB database onto Atlas. I did this by using mongodump in my api directory, then gitignoring dump, then doing the instructed mongorestore cmd line command for my newly created Atlas cluster. Once executed, my database was available in the cloud on Atlas. One issue I ran into here was whitelisting all IPs with Atlas, then refreshing Heroku with the new DB URL env variable.
+
+Afterwards, I deployed UI, a fairly straight-forward affair after a bit of fighting with my package.JSON. Once that was done, we were not able to persist logins due to changes in CORS/cookie considerations. So what we did was enable Proxy mode, which does not have CORS or cookie considerations. This was achieved with a few changes to the Heroku env variables and a couple small tweaks to the UI server.
+
+
+### Heroku Link
+https://tracker-ui-zkatancik.herokuapp.com/issues
+
+![master](/readme_images/ch15-1.png)
+
+
+---
+
 ## Chapter 14
 
 This chapter was all about creating user logins, authentication, persistence of authentication, setting user capabilities based on authentication, creating cookies, and using cookies at a server and ui level.
